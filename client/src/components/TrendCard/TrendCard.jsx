@@ -11,7 +11,7 @@ const TrendCard = () => {
             return(
                 <div className="trend" key={id}>
                     <span>#{trend.name}</span>
-                    <span>{trend.shares}k shares</span>
+                    <span>{trend.shares}k challenges</span>
                 </div>
             )
        })}

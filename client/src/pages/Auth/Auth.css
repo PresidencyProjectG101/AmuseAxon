@@ -2,9 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 95vh;
   gap: 4rem;
   position: relative;
+  background-image: linear-gradient(to right top, #12211e, #163530, #184a45, #14605b, #047773);
+  border-radius: 1rem;
 }
 
 .Auth > div {
@@ -14,23 +16,27 @@
 }
 
 
-
 /* left side */
 .a-left{
     gap: 2rem;
 }
 
 .a-left > img {
-  width: 4rem;
-  height: 4rem;
+  width: 15rem;
+  /* height: 4rem; */
+  position: absolute;
+  left: 7px;
+  top: 7px;
 }
 
 .Webname > h1 {
+    margin-top: 4rem;
     font-size: 3rem;
-    background-color: red;
+    background-color: aliceblue;
   
     /* Create the gradient. */
-    background-image: var(--buttonBg);
+    /* background-image: var(--buttonBg); */
+    /* background-image: var(--buttonBg); */
     
     /* Set the background size and repeat properties. */
     background-size: 100%;
@@ -45,7 +51,8 @@
 }
 
 .Webname>h6{
-    font-size: 0.85rem;
+    font-size: 1rem;
+    color: aliceblue;
 }
 
 
@@ -54,13 +61,38 @@
 
 
 .authForm{
-    background-color: var(--cardColor);
-    border-radius: 1rem;
+    /* background-color: var(--cardColor);
+    border-radius: 1rem; */
     padding: 1rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: aliceblue;
+
 }
 
 .authForm>div{
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+.authForm{
+  padding: 40px 20px;
+  border-radius: 40px 7px 40px 7px;
+  /* height: 20rem; */
+}
+
+input{
+  color: aliceblue;
+}
+input[type]{
+  background-color: rgba(1, 52, 55,0.5);
+  border-radius: .9rem;
+}
+
+.infoButton{
+  height: 2.5rem;
+  border-radius: 0.7rem;
 }

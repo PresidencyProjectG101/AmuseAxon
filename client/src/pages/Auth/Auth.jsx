@@ -57,8 +57,8 @@ const Auth = () => {
         <img src={Logo} alt="" />
 
         <div className="Webname">
-          <h1>ZKC Media</h1>
-          <h6>Explore the ideas throughout the world</h6>
+          <h1>Amuse Axon</h1>
+          <h6>An Fitness World</h6>
         </div>
       </div>
 

@@ -1,12 +1,21 @@
 
 .FollowersCard{
-    width: 100%;
+    width: 95%;
     border-radius: 0.7rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    max-height: 10rem;
+    /* max-height: 10rem; */
+    color: rgb(130, 130, 130);
+    padding: 10px 6px;
+    /* background: #191F28; */
+
+    /* border: 1px salmon solid; */
+    /* backdrop-filter: blur(46px) saturate(180%); */
+}
+.FollowersCard >h3{
+    color: #008170;
 }
 .follower{
     display: flex;
@@ -46,8 +55,8 @@
 }
 
 .UnfollowButton{
-    color: var(--orange);
-    border: 2px solid var(--orange);
+    color: aliceblue;
+    border: 2px solid rgba(240, 248, 255, 0.664);
     cursor: pointer;
     background: transparent;
 }
@@ -55,7 +64,7 @@
 
 .FollowersCard>span{
     font-weight: bold;
-    color: orange;
+    color: #008170;
     align-self: center;
     cursor: pointer;
 }

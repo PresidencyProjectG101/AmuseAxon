@@ -49,7 +49,7 @@ const InfoCard = () => {
             <ProfileModal
               modalOpened={modalOpened}
               setModalOpened={setModalOpened}
-              data = {user}
+              data={user}
             />
           </div>
         ) : (
@@ -60,24 +60,38 @@ const InfoCard = () => {
       <div className="info">
         {/* */}
         <span>
-          <b>Status </b>
+          <b>Status &nbsp; &nbsp;</b>
         </span>
         <span>{profileUser.relationship}</span>
       </div>
       <div className="info">
         <span>
-          <b>Lives in </b>
+          <b>Lives in &nbsp; &nbsp;</b>
         </span>
         <span>{profileUser.livesIn}</span>
       </div>
       <div className="info">
         <span>
-          <b>Works at </b>
+          <b>Works at &nbsp; &nbsp;</b>
         </span>
         <span>{profileUser.worksAt}</span>
       </div>
+      <div className="info">
+        <span>
+          <b>Games Won &nbsp; &nbsp;</b>
+        </span>
+        <span>07</span>
+      </div>
+      <div className="info">
+        <span>
+          <b>Badges &nbsp; &nbsp;</b>
+        </span>
+        <span>10</span>
+      </div>
 
-      <button className="button logout-button" onClick={handleLogOut}>Log Out</button>
+      <button className="button logout-button" onClick={handleLogOut}>
+        Log Out
+      </button>
     </div>
   );
 };

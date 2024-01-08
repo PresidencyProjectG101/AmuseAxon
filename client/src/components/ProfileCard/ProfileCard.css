@@ -5,7 +5,9 @@
   position: relative;
   gap: 1rem;
   overflow-x: clip;
-  background-color: var(--cardColor);
+  /* background-color: var(--cardColor); */
+  background-color: #191F28;
+  color: aliceblue;
 }
 
 /* Profile Images */
@@ -19,10 +21,14 @@
 
 .ProfileImages > img:nth-of-type(1) {
   width: 100%;
+  /* border-radius: 20px; */
+
 }
 .ProfileImages > img:nth-of-type(2) {
   width: 6rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 30px 7px 20px 7px;
+  width: 110px;
   position: absolute;
   bottom: -3rem;
   box-shadow: var(--profileShadow);
@@ -33,8 +39,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
-  gap: 10px;
+  margin-top: 2.3rem;
+  gap: 5px;
 }
 
 .ProfileName > span:nth-of-type(1) {
@@ -53,6 +59,8 @@
 .followStatus > hr {
   width: 85%;
   border: 1px solid var(--hrColor);
+  /* margin-bottom: 15px; */
+  /* margin-top: 0px; */
 }
 
 .followStatus > div {
@@ -75,7 +83,8 @@
 }
 
 .follow > span:nth-of-type(2) {
-  color: var(--gray);
+  /* color: var(--gray); */
+  color: rgba(224, 251, 248, 0.432);
   font-size: 13px;
 }
 
@@ -84,14 +93,10 @@
   border-left: 2px solid var(--hrColor);
 }
 
-
-
-
-.ProfileCard>span
-{
-    font-weight: bold;
-    color: orange;
-    align-self: center;
-    margin-bottom: 1rem;
-    cursor: pointer;
+.ProfileCard > span {
+  font-weight: bold;
+  color: #008170;
+  align-self: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }

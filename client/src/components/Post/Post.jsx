@@ -29,14 +29,14 @@ const Post = ({ data }) => {
         <img
           src={liked ? Heart : NotLike}
           alt=""
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer",width:"2rem" }}
           onClick={handleLike}
         />
-        <img src={Comment} alt="" />
-        <img src={Share} alt="" />
+        {/* <img src={Comment} alt="" /> */}
+        {/* <img src={Share} alt="" /> */}
       </div>
 
-      <span style={{ color: "var(--gray)", fontSize: "12px" }}>
+      <span style={{ color: "white", fontSize: "12px" }}>
         {likes} likes
       </span>
       <div className="detail">

@@ -8,6 +8,9 @@ import { UilTimes } from "@iconscout/react-unicons";
 import { useDispatch, useSelector } from "react-redux";
 import { uploadImage, uploadPost } from "../../actions/UploadAction";
 
+import Photo from "../../img/photo.png"
+
+
 const PostShare = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.authReducer.authData);
@@ -73,21 +76,22 @@ const PostShare = () => {
       <div>
         <input
           type="text"
-          placeholder="What's happening?"
+          placeholder="Gamify you're Fitness..."
           required
           ref={desc}
         />
         <div className="postOptions">
           <div
             className="option"
-            style={{ color: "var(--photo)" }}
+            style={{ color: "aliceblue" }}
             onClick={() => imageRef.current.click()}
           >
-            <UilScenery />
-            Photo
+            {/* <UilScenery /> */}
+            <img src={Photo} />
+            &nbsp; Photo
           </div>
 
-          <div className="option" style={{ color: "var(--video)" }}>
+          {/* <div className="option" style={{ color: "var(--video)" }}>
             <UilPlayCircle />
             Video
           </div>
@@ -98,7 +102,7 @@ const PostShare = () => {
           <div className="option" style={{ color: "var(--shedule)" }}>
             <UilSchedule />
             Shedule
-          </div>
+          </div> */}
           <button
             className="button ps-button"
             onClick={handleUpload}
