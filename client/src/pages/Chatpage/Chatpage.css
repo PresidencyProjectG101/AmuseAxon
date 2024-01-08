@@ -4,6 +4,7 @@
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   letter-spacing: 0.5px;
+  border-radius: 3px;
 }
 
 .ce-chat-list {
@@ -11,31 +12,38 @@
 }
 
 .ce-chats-container {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #191f28 !important;
+  color: aliceblue;
+  padding: 2px;
+  border-radius: 1px;
 }
 
 .ce-active-chat-card {
-  background-color: #cabcdc !important;
-  border: 4px solid #cabcdc !important;
-  border-radius: 0px !important;
+  background-color: #474c52 !important;
+  border: 3px solid #33353ad6 !important;
+  /* border-radius: 4px !important; */
+  margin: 3px 1px;
 }
 
 .ce-chat-subtitle-text {
-  color: #595959 !important;
+  color: rgba(240, 248, 255, 0.655) !important;
 }
 
 .ce-chat-form-container {
   padding-bottom: 20px !important;
+  color: #008170;
+  background-color: #191f28;
 }
 
 .ce-text-input {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1.5px solid #700cea !important;
+  margin-bottom: 7px;
 }
 
 .ce-primary-button {
   border-radius: 6px !important;
-  background-color: #7554a0 !important;
+  background-color: #037882d6 !important;
   position: relative;
   bottom: 1px;
 }
@@ -46,7 +54,9 @@
 }
 
 .ce-settings {
-  background-color: rgb(240, 240, 240) !important;
+  /* background-color: rgb(240, 240, 240) !important; */
+  background-color: #191f28 !important;
+  color: rgb(93, 96, 100);
 }
 
 .ce-autocomplete-input {
@@ -78,21 +88,25 @@
 }
 
 .chat-title-container {
-  width: calc(100% - 36px);
+  /* width: calc(100% - 36px); */
   padding: 18px;
   text-align: center;
 }
 
 .chat-title {
-  color: #7554a0;
+  color: aliceblue;
   font-weight: 800;
   font-size: 24px;
+  background-color: #191f28f6;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(86, 80, 80, 0.708);
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #256d83;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 20px;
   padding-top: 4px;
 }
 
@@ -159,12 +173,13 @@
   width: calc(100% - 36px);
   padding: 18px;
   background-color: rgb(240, 240, 240);
+  margin-bottom: 30px;
 }
 
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #3b2a50;
+  border: 1px solid #7300ff5a;
   background-color: white;
 }
 
@@ -176,6 +191,7 @@
   padding: 0px 18px;
   outline: none;
   font-size: 15px;
+  color: #191f28;
 }
 
 .image-button {
@@ -252,7 +268,7 @@
   font-size: 2.3em;;
 }
 
-.button {
+.btn {
   border-radius: 4px;
   border: none;
   background-color: white;
@@ -267,13 +283,13 @@
   margin: 5px;
   width: 90%;
 }
-.button span {
+.btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.4s;
 }
-.button span:after {
+.btn span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -281,10 +297,10 @@
   right: -20px;
   transition: 0.5s;
 }
-.button:hover span {
+.btn:hover span {
   padding-right: 25px;
 }
-.button:hover span:after {
+.btn:hover span:after {
   opacity: 1;
   right: 0;
 }

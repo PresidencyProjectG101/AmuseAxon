@@ -4,6 +4,8 @@ import Logo from "../../img/logo.png";
 import { logIn, signUp } from "../../actions/AuthActions.js";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+// ==================
+// import axios from "axios";
 
 const Auth = () => {
   const initialState = {
@@ -24,6 +26,9 @@ const Auth = () => {
   const [confirmPass, setConfirmPass] = useState(true);
 
   // const dispatch = useDispatch()
+  // =============
+  // const projectID = "4d673da1-3506-44f9-a3a9-e2a5a9c9f1d5";
+
 
   // Reset Form
   const resetForm = () => {
@@ -40,6 +45,26 @@ const Auth = () => {
   const handleSubmit = (e) => {
     setConfirmPass(true);
     e.preventDefault();
+// =============================================
+    //  const authObject = {
+    //    "Project-ID": projectID,
+    //    "User-Name": data.username,
+    //    "User-Secret": data.password,
+    //  };
+
+    // try {
+    //  axios.get('https://api.chatengine.io/chats', { headers: authObject });
+
+    //   localStorage.setItem('username', data.username);
+    //   localStorage.setItem('password', data.password);
+
+    //   window.location.reload();
+    //   setError('');
+    // } catch (err) {
+    //   setError('Oops, Incorrect Credentials.');
+    // }
+
+
     if (isSignUp) {
       data.password === data.confirmpass
         ? dispatch(signUp(data, navigate))
