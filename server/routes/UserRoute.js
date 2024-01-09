@@ -11,6 +11,6 @@ router.delete('/:id',authMiddleWare, deleteUser)
 router.put('/:id/follow',authMiddleWare, followUser)
 router.put('/:id/unfollow',authMiddleWare, unfollowUser)
 // ===============================
-router.route("/").get(allUsers);
+// router.route("/").get(allUsers);
 
 export default router

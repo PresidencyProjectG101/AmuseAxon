@@ -16,11 +16,11 @@ router.post('/', createChat);
 router.get('/:userId', userChats);
 router.get('/find/:firstId/:secondId', findChat);
 // ========================================================
-router.route("/").post(accessChat);
-router.route("/").get(fetchChats);
-router.route("/group").post(createGroupChat);
-router.route("/rename").put(renameGroup);
-router.route("/groupremove").put(removeFromGroup);
-router.route("/groupadd").put(addToGroup);
+// router.route("/").post(accessChat);
+// router.route("/").get(fetchChats);
+// router.route("/group").post(createGroupChat);
+// router.route("/rename").put(renameGroup);
+// router.route("/groupremove").put(removeFromGroup);
+// router.route("/groupadd").put(addToGroup);
 
 export default router

@@ -41,13 +41,13 @@
 .own {
   align-self: flex-end;
   border-radius: 1rem 1rem 0 1rem;
-  background: linear-gradient(98.63deg, #24e4f0 0%, #358ff9 100%);
+  background: linear-gradient(98.63deg, #05ddec 0%, #03bd9eda 100%);
 }
 
 
 
 .chat-sender {
-    background: white;
+    background: rgba(43, 45, 45, 0.543);
     display: flex;
     justify-content: space-between;
     height: 3.5rem;
@@ -67,10 +67,23 @@
     font-size: 14px;
     padding: 0px 15px 0px 15px;
 }
+.send-button p{
+    color: #7143ee;
+    font-weight: bold;
+}
+.send-button p:hover{
+    color: aliceblue;
+}
+.send-button{
+    height: 3rem;
+    /* border: 2px solid aqua; */
+}
 .chat-sender>div:nth-of-type(1)
 {
-    background: rgb(233, 233, 233);
+    background: rgb(216, 224, 224);
     border-radius: 0.5rem;
+    height: 2rem;
+    border: 1px solid rgb(128, 79, 242);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,4 +93,5 @@
 .chat-sender>div{
     height: 70%;
     padding: 0px 15px 0px 15px;
+    /* border: 2px solid aqua; */
 }

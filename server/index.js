@@ -11,7 +11,11 @@ import UserRoute from './routes/UserRoute.js'
 import PostRoute from './routes/PostRoute.js'
 import UploadRoute from './routes/UploadRoute.js'
 import ChatRoute from './routes/ChatRoute.js'
+import Chat from './routes/ChatRoute.js'
 import MessageRoute from './routes/MessageRoute.js'
+
+import workouts from "./routes/workouts.js"
+// const workoutRoutes = require("./routes/workouts");
 
 const app = express();
 
@@ -42,4 +46,7 @@ app.use('/user', UserRoute)
 app.use('/posts', PostRoute)
 app.use('/upload', UploadRoute)
 app.use('/chat', ChatRoute)
+app.use('/chatting', Chat)
 app.use('/message', MessageRoute)
+
+app.use('/workouts', workouts);

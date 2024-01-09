@@ -5,20 +5,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import store from "./store/ReduxStore";
 import App from "./App";
-
+import "./index.css";
 // import { ChakraProvider } from "@chakra-ui/react";
+import { WorkoutsContextProvider } from "./context/WorkoutsContext";
 
 // stack overflow
 
 ReactDOM.render(
-  
+  <WorkoutsContextProvider>
   <Provider store={store}>
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<App />} />
         </Routes>
       </BrowserRouter>
-  </Provider>,
+  </Provider>
+  </WorkoutsContextProvider>,
   document.getElementById("root")
 );
 

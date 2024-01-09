@@ -4,7 +4,7 @@ import Home from "../../img/home.png";
 import Noti from "../../img/noti.png";
 import Setti from "../../img/setti.png"
 import Comment from "../../img/comment.png";
-import { UilSetting } from "@iconscout/react-unicons";
+// import { UilSetting } from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
 
 const NavIcons = () => {
@@ -14,9 +14,15 @@ const NavIcons = () => {
         <img src={Home} alt="" />
       </Link>
       {/* <UilSetting /> */}
+
+      <Link to="../chatting">
       <img src={Setti} alt="" />
-      <img src={Noti} alt="" />
-      
+      </Link>
+
+      <Link to="../workouts">
+        <img src={Noti} alt="" />
+      </Link>
+
       <Link to="../chat">
         <img src={Comment} alt="" />
       </Link>

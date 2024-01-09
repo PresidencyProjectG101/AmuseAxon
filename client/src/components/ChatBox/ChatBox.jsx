@@ -148,7 +148,7 @@ useEffect(()=> {
                 value={newMessage}
                 onChange={handleChange}
               />
-              <div className="send-button button" onClick = {handleSend}>Send</div>
+              <div className="send-button button" onClick = {handleSend}><p>Send</p></div>
               <input
                 type="file"
                 name=""
